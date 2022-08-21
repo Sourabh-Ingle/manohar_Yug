@@ -1,0 +1,85 @@
+/* ======LOCGIC FOR SLIDING REVIEW WITH THE HELP OF JS====== */
+
+.detail-Article {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    min-height: 40vh;
+    margin: 0;
+}
+
+.article-class {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.btncenter {
+    position: relative;
+}
+
+
+.common-btn {
+    position: absolute;
+    bottom: 20vh;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1.5px solid orangered;
+    color: orangered;
+}
+
+.common-btn:hover {
+    color: green;
+    border: 1.85px solid green;
+}
+
+.pre {
+    left: 1rem;
+}
+
+.next {
+    right: 1rem;
+}
+
+.person-img {
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.lastSlide {
+    transform: translateX(-100%);
+}
+
+.nextSlide {
+    transform: translateX(100%);
+}
+
+@media (min-width:500px){
+    .detail-Article {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        min-height: 90vh;
+        margin: 0;
+    }
+    .common-btn {
+        position: absolute;
+        bottom: 20rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        border: 1.5px solid orangered;
+        color: orangered;
+    }
+}
